@@ -1,0 +1,330 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_Dm3UqrmJwTQFdmV8sfKw3');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_8no224f', 'template_n08qbge', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="header-1">
+                    <img src="./img/logo (1) 1.png" alt="">
+                    <div class="linia">
+                       <p class="ua">UA</p>
+                       <p class="ua">RU</p>
+                    </div>
+                    <div class="linia-1">
+                        <p class="usd"> USD <span> 28,90</span></p>
+                        <p class="usd">EUR <span>35,00</span></p>
+                     </div>
+                     <div class="linia-2">
+                        <div class="icons">
+                            <span class="iconify" data-icon="bx:bxl-facebook" ></span>
+                            <span class="iconify" data-icon="bx:bxl-instagram" ></span>
+                            <span class="iconify" data-icon="akar-icons:youtube-fill"></span>
+                          </div>
+                        </div>
+            
+                     <div class="linia-3">
+                       <p class="usd">044-537-20-07</p>
+                       <p class="usd">068-537-20-07</p>
+                       <i class="fa fal fa-mobile"></i>
+                     </div>
+                     <div class="linia-4">
+                        <div class="linia-left">
+                            <p>Maistra Online</p>
+                        </div>
+                        <div class="linia-right">
+                            <i class="fa fa-calendar-check-o"></i>
+                        </div>
+                      </div>
+                      <div class="linia-5">
+                        <div class="linia-left">
+                            <p>Туры Online</p>
+                        </div>
+                        <div class="linia-right">
+                            <i class="fa fas fa-search"></i>
+                        </div>
+                      </div>
+                </div>
+                
+                <div class="header-2">
+                  
+                        <ul>
+                            <li><i class="fa fas fa-search"></i></li>
+                            <li>Отели
+                                <i class="fa fa-caret-down"></i>
+                                <ul>
+                                    <li>5 звёзд, береговая линия</li>
+                                    <li>5 звёзд, в центре города</li>
+                                    <li>4 звёзд, береговая линия</li>
+                                    <li>4 звёзд, в центре города</li>
+                                    <li>3 звёзд, береговая линия</li>
+                                    <li>3 звёзд, в центре города</li>
+                                    <li>Другие...</li>
+                                </ul>
+                            </li>
+                            <li>Страны
+                                <i class="fa fa-caret-down"></i>
+                                <ul>
+                                    <li>Черногория</li>
+                                    <li>Хорватия</li>
+                                    <li>Италия</li>
+                                    <li>Словения</li>
+                                    <li>Швеция</li>
+                                    <li>Испания</li>
+                                    <li>Другие...</li>
+                                </ul>
+                            </li>
+                            <li>Авиа
+                                <i class="fa fa-caret-down"></i>
+                                <ul>
+                                    <li>Чартерные рейсы в Хорватию</li>
+                                    <li>Регулярные рейсы в Хорватию</li>
+                                    <li>Чартерные рейсы в Черногорию</li>
+                                    <li>Регулярные рейсы в Черногорию</li>
+                                    <li>Авиаперелёты в Италию</li>
+                                    <li>Авиаперелёты в Словению</li>
+                                    <li>Авиаперелёты по всему миру</li>
+                                </ul>
+                            </li>
+                            <li>Каталог туров</li>
+                            <li>Агентам
+                                <i class="fa fa-caret-down"></i>
+                                <ul>
+                                    <li>Позвонить</li>
+                                    <li>Резюме</li>
+                                    <li>Устроиться на работу</li>
+                                    <li>Написать</li>
+                                    <li>Другое...</li>
+                                </ul>
+                            </li>
+                            <li>О нас
+                                <i class="fa fa-caret-down"></i>
+                                <ul>
+                                    <li>Отзывы</li>
+                                    <li>Оставить отзыв</li>
+                                    <li>Другое...</li>
+                                </ul>
+                            </li>
+                            <li>Блог</li>
+                            <li>FAQ</li>
+                            <li>Контакты</li>
+                        </ul>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="header-3">
+            <div class="container-baner">
+                <div class="button-1">
+                    <p>От 300 &euro; за сутки</p>
+                </div>
+                <h1>НОВЫЙ ЭКО-ОТЕЛЬ MASTILA <br>НА О. ХВАР В ХОРВАТИИ</br></h1>
+                <a class="button-2" href="#">Подробнее</a>
+            </div>
+
+        </div>
+        <div class="main">
+            <div class="main-baner">
+                <div class="top">
+                    <h1><p>АКТУАЛЬНЫЕ ТУРЫ</p></h1>
+                    <div class="poloska"></div>
+                    <a class="button" href="#"> Все туры</a>
+                </div>
+                <div class="bottom">
+                    <div class="photo-1">
+                        <div class="picture">
+                            <div class="small"><p>Портонови, Черногория</p></div>
+                        </div>
+                        <div class="info">
+                            <h1>ONE&ONLY PORTONOVI</h1>
+                            <p class="t-0">первый ультрароскошный курорт One&Only в Европе</p>
+                            <div class="poloska-2"></div>
+                            <p class="t-1">от 818 &euro;</p>
+                            <p class="t-2">за номер в сутки в сезон</p>
+                            <p class="t-3">от 3 ночей <br>с 01 мая 2021</p>
+                        </div>
+                    </div>
+                    <div class="photo-2">
+                        <div class="picture">
+                            <div class="small"><p>Ровинь, п-в Истра</p></div>
+                        </div>
+                        <div class="info">
+                            <h1>ЗИМОВКА В REGENT <br>PORTO MONTENEGRO</h1>
+                            <p class="t-01">це втілення високого стилю, в якому поєднується зручність...</p>
+                            <div class="poloska-2"></div>
+                            <p class="t-1">от 938 &euro;</p>
+                            <p class="t-2">з особи</p>
+                            <p class="t-3">от 3 ночей <br>с 01 мая 2021</p>
+                        </div>
+                    </div>
+                    <div class="photo-3">
+                        <div class="picture">
+                            <div class="small"><p>Бока Котор, Черногория</p></div>
+                        </div>
+                        <div class="info">
+                            <h1>ЛЕЧЕНИЕ В NAFTALAN С <br>АВИА КИЕВ-ЗАГРЁБ-КИЕВ</h1>
+                            <p class="t-01">первый бренд, воплотивший <br>оригинальную концепцмю пляжных...</p>
+                            <div class="poloska-2"></div>
+                            <p class="t-1">от 175 &euro;</p>
+                            <p class="t-2">за номер в сутки</p>
+                            <p class="t-3">от 3 ночей <br>с 01 мая 2021</p>
+                        </div>
+                        <i class="fa fa-arrow-circle-o-right"></i>
+                        <i class="fa fa-arrow-circle-o-left"></i>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+
+
+                     <!-- travel -->
+        <div class="travel">
+            <div class="baner">
+                <div class="baner-tit">
+                    <h1>TRAVEL</h1>
+                    <p>ЧТО ТАКОЕ ПУТЕШЕСТВИЯ <br> VALANTA TRAVEL COMPANY?</p>
+                </div>   
+            </div>
+
+                <div class="journey-container">  
+                    <h1 class="name">ЧТО ТАКОЕ ПУТЕШЕСТВИЯ?</h1>   
+                    <div class="journey">
+                        <div class="right-1">
+                            <div class="icon">
+                                <img src="./img/Group 153.png" alt="">
+                            </div>
+                            <div class="icon">
+                                <img src="./img/Frame 54.png" alt="">
+                            </div>
+                            <div class="icon">
+                                <img src="./img/Frame 55.png" alt="">
+                            </div>
+                            
+                        </div>
+                            <div class="right">
+                                <p><b>Абсолютно новый подход</b> к организации путешествий. Мы помогаем реализовать путешествие согласно стилю жизни и предпочтениям клиента.</p>
+                                <p><b>Сервис и дополнительные услуги,</b>благодаря которым 100% времени вы уделите именно отдыху, а не решению мелких задач.</p>
+                                <p><b>Комфорт премиум-класса</b> за оптимальную стоимость, благодаря специальным условиям, которые дают нам партнеры.
+                                </p>
+                            </div>
+                            <div class="left-2">
+                                <div class="icon">
+                                    <img src="./img/dancing 1.png" alt="">
+                                </div>
+                                <div class="icon">
+                                    <img src="./img/thinking 1.png" alt="">
+                                </div>
+                                <div class="icon">
+                                    <img src="./img/renewable-energy 1.png" alt="">
+                                </div>
+                        </div>
+                            <div class="left">
+                                <p><b>Нестандартные развлечения:</b> от охоты за трюфелями до пикника на необитаемом острове, в зависимости от выбранной страны.</p>
+                                <p><b>Впечатления и воспоминания,</b> которые будут вызывать мурашки всю оставшуюся жизнь, как поездка на только что купленном первом <br>автомобиле.
+                                </p>
+                                <p><b>Полное восстановление</b> энергии и всего организма. Готовность по новой ворваться в рабочий ритм с повышенной продуктивностью.
+                                </p>
+                            </div>
+                </div>
+            </div>
+         </div>
+
+         <!-- footer -->
+
+            <div class="footer">
+                <div class="footer-baner">
+                        <div class="email">
+                            <form  action="" id="contact-form">
+                                <input type="hidden" name="contact_number">
+                            <h1>ПУТЕШЕСТВУЙ С <br>Travel Company!</h1>
+                            <p>ПОДПИСЫВАЙТЕСЬ НА НАШУ РАССЫЛКУ, ЧТОБЫ <br>ПОЛУЧАТЬ САМЫЕ ГОРЯЧИЕ ПРЕДЛОЖЕНИЯ</p>
+                            <input class="text-email" type="email" name="Email" placeholder="Email">
+                            <label>
+                                <input class="radio-email"  value=" Я турист" name="status" type="radio" checked> Я турист
+                            </label>
+                            <label>
+                                <input class="radio-email" value="Я турагент"  name="status" type="radio" > Я турагент
+                            </label>
+                                <button type="submit">ОТПРАВИТЬ</button>
+                            </form>
+                        </div>
+                    </div>
+                        <div class="end">
+                            <img src="./logo (1) 2.png" alt="">
+                        <div class="first">
+                            <p>Отели</p>
+                            <p>Страны</p>
+                            <p>Maistra online</p>
+                            <p>Туры online</p>
+                        </div>
+                        <div class="second">
+                            <p>Агентам</p>
+                            <p>О нас</p>
+                            <p>Блог</p>
+                        </div>
+                        <div class="third">
+                            <p class="th">РЕЖИМ РАБОТЫ</p>
+                            <p>Пн-Пт 10:00-19:00</p>
+                        </div>
+                        <div class="fourth">
+                            <p>+38 (000) 000-00-00</p>
+                            <p>+38 (000) 000-00-00</p>
+                            <p class="th">ВСЕ КОНТАКТЫ</p>
+                        </div>
+                        <div class="last">
+                            <div class="one">
+                                <p>2002-2021 Туроператор Valanta Travel Company</p>
+                            </div>
+                                <div class="ico">
+                                    <span class="iconify" data-icon="bx:bxl-facebook" ></span>
+                                    <span class="iconify" data-icon="bx:bxl-instagram" ></span>
+                                    <span class="iconify" data-icon="akar-icons:youtube-fill"></span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    
+    
+</body>
+</html>

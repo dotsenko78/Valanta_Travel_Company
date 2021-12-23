@@ -1,0 +1,788 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header-1 {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(128, 124, 124);
+}
+.header-1 img {
+    width: 131px;
+    height: 72px;
+}
+.name {
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #000;
+}
+.linia {
+    width: 60px;
+    height: 40px;
+    border-right: 1px solid rgb(128, 124, 124);
+    border-left: 1px solid rgb(128, 124, 124);
+    
+    
+}
+.ua {
+    width: 40px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.ua:hover {
+    color: #fff;
+    font-weight: bold;
+    background-color: rgb(13, 241, 184);
+    border-radius: 10%;
+}
+.linia-1 {
+    width: 131px;
+    height: 40px;
+    border-right: 1px solid rgb(128, 124, 124); 
+    
+
+}
+.usd {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto; 
+    text-align: center;
+
+}
+span {
+    font-family: 'Open Sans', sans-serif;
+
+}
+.linia-2 .icons {
+    color: rgb(92, 91, 91);
+    margin-top: 10px;
+    margin-left: 8px;
+    font-size: 25px;
+    
+
+}
+.linia-2 {
+    width: 131px;
+    height: 40px;
+    border-right: 1px solid rgb(128, 124, 124); 
+    display: flex;
+    justify-content: center;
+    
+}
+.linia-3 {
+    width: 223px;
+    height: 40px;
+    border-right: 1px solid rgb(128, 124, 124); 
+    position: relative;
+    
+    
+}
+.linia-3 i {
+    color: rgb(92, 91, 91);
+    position: absolute;
+    right: 13px;
+    top: -7px;
+    font-size: 60px;
+    
+
+}
+.linia-4 {
+    width: 240px;
+    height: 50px; 
+    display: flex;
+    margin-left: 10px;
+    
+    
+    
+}
+.linia-right {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(228, 50, 64);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linia-left {
+    width: 190px;
+    height: 50px;
+    background-color: rgb(219, 215, 215);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    
+}
+.linia-right i {
+    color: #fff;
+    font-size: 20px;
+}
+.linia-left p {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding-top: 15px;
+}
+.linia-5 {
+    width: 240px;
+    height: 50px; 
+    display: flex;
+    margin-left: 10px;
+    
+    
+    
+}
+.linia-5 .linia-right {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(77, 221, 178);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linia-5 .linia-left {
+    width: 190px;
+    height: 50px;
+    background-color: rgb(219, 215, 215);
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    
+}
+.linia-5 .linia-right i {
+    color: #fff;
+    font-size: 20px;
+}
+.linia-5 .linia-left p {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding-top: 15px;
+}
+.header-2 {
+     width: 100%;
+     height: 80px;
+}
+ ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    position: relative;
+}
+ ul  li{
+    display: flex;
+    position: relative;
+    padding: 10px 20px;
+}
+ul li ul {
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 10px;
+    opacity: 0;
+}
+ul li:hover >ul {
+    display: block;
+    opacity: 1;
+}
+ul li ul li {
+    width: 270px;
+    display: block;
+
+}
+li:hover {
+    background-color: rgba(170, 173, 185, 0.925);
+}
+li {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    z-index: 1;
+}
+.fa-caret-down {
+    padding-left: 10px;
+    padding-top: 4px;
+    color: rgb(175, 173, 173);
+    font-size: 10px;
+}
+.fa-search {
+    font-weight: lighter;
+}
+.header-3 {
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(./maxresdefault.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+
+}
+.container-baner {
+    width: 90%;
+    height: 500px;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main-baner {
+    width: 90%;
+    height: 700px;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.travel-baner {
+    width: 90%;
+    height: 500px;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-baner {
+    width: 90%;
+    height: 300px;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header-3 h1 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    top: 170px;
+    left: 10px;
+    font-size: 58px;
+}
+.button-1 {
+    width: 200px;
+    height: 40px;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 120px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.button-1 p {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 20px;
+}
+.button-2 {
+    padding: 10px 20px;
+    background-color: rgba(156, 155, 155, 0.568);
+    position: absolute;
+    top: 350px;
+    left: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+.button-2:hover {
+    background-color: #fff;
+    color: black;
+}
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.top {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.top h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    margin-top: 20px;
+    margin-left: 140px;
+}
+.poloska {
+    width: 400px;
+    height: 1px;
+    background-color: rgb(150, 147, 147);
+    margin-right: 14px;
+    margin-left: 18px;
+    margin-top: 45px;
+}
+.button {
+    width: 100px;
+    height: 40px;
+    border-radius: 2px;
+    border: 1px solid rgb(150, 147, 147);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(150, 147, 147);
+    text-decoration: none;
+}
+.button:hover {
+    background-color: rgb(150, 147, 147);
+    color: #fff;
+}
+.bottom {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+.photo-1 {
+    width: 300px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(228, 227, 227);
+}
+.photo-2 {
+    width: 300px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(228, 227, 227);
+}
+.photo-3 {
+    width: 300px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(228, 227, 227);
+    position: relative;
+}
+.picture {
+    width: 100%;
+    height: 300px;
+    display: block;
+    position: relative;
+}
+.photo-1 .picture {
+    background: url(./img/mandarina\ 2.png) no-repeat;
+    background-size: cover;
+}
+.photo-2 .picture {
+    background: url(./img/Mask\ Group.png) no-repeat;
+    background-size: cover;
+}
+.photo-3 .picture {
+    background: url(./img/Mask\ Group2.png) no-repeat;
+    background-size: cover;
+}
+.small {
+    width: 200px;
+    height: 40px;
+    background-color: rgba(66, 66, 66, 0.651);
+    position: absolute;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.small p {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+.info {
+    width: 100%;
+    height: 250px;
+    display: block;
+    position: relative;
+}
+.info h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.t-0 {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+    margin-top: 35px;
+    color: rgb(126, 125, 125);
+}
+.poloska-2 {
+    
+    width: 270px;
+    height: 1px;
+    background-color: rgb(150, 147, 147);
+    margin-left: 10px;
+    margin-top: 10px; 
+}
+.t-1 {
+    color: rgb(240, 83, 83);
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+}
+.t-2 {
+    color: rgb(126, 125, 125);
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+    font-size: 12px;
+}
+.t-3 {
+    color: rgb(12, 12, 12);
+    position: absolute;
+    top: 185px;
+    left: 180px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+.t-01 {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: rgb(126, 125, 125);
+}
+.fa-arrow-circle-o-right {
+    color: rgb(151, 150, 150);
+    position: absolute;
+    top: 200px;
+    left: 330px;
+}
+.photo-3 i {
+    font-size: 30px;
+}
+.fa-arrow-circle-o-left {
+    color: rgb(151, 150, 150);
+    position: absolute;
+    top: 200px;
+    right: 1105px;
+}
+.photo-3 i:hover {
+    color:lightblue;
+    border: 2px solid lightblue;
+    cursor:pointer;
+}
+
+/* travel  */
+
+.travel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(216, 212, 212);
+}
+.baner {
+    width: 100%;
+    height: 500px;
+    background: url(./Mask\ Group3.png) no-repeat center center;
+    background-size: cover;
+}
+.baner-tit {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.baner-tit h1 {
+    color: rgba(255, 255, 255, 0.336);
+    font-size: 200px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 85px;
+    font-weight: bold;
+}
+.baner-tit p {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    position: absolute;
+    top: 80px;
+    left: 250px;
+}
+.journey-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 500px;
+}
+.journey {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #fff;
+    position: absolute;
+    left: 0px;
+    top: -100px;
+}
+.icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed rgb(124, 123, 123);
+    border-radius: 50%;
+   margin: 20px 0 20px 20px;
+}
+.journey p {
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 20px 0 20px;
+    font-size: 17px;
+
+}
+.right-1 {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.left-2 {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.left p {
+    margin-left: 20px;
+}
+.right p {
+    margin-top: 25px;
+}
+
+               /* footer */
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(216, 212, 212);
+}
+.email {
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+}
+.email h1 {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 200px;
+    font-size: 55px;
+}
+.email p {
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    right: 100px;
+    bottom: 150px;
+    font-weight: bold;
+}
+.text-email {
+    width: 300px;
+    height: 30px;
+    border: 1px solid rgb(177, 176, 176);
+    margin-left: 200px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.radio-email {
+   border-radius: 50%;
+   background-color: brown;
+   margin-bottom: 20px;
+}
+label {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 20px;
+}
+.end {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(211, 209, 209, 0.801), rgba(250, 246, 246, 0.527)), url(./img/SloveniaHeader\ 3.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+button {
+    width: 200px;
+    height: 40px;
+    background-color: rgb(230, 59, 59);
+    color: rgb(245, 245, 245);
+    border: none;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.end img {
+    width: 131px;
+    height: 72px;
+    margin-left: 30px;
+}
+.end p {
+    font-family: 'Open Sans', sans-serif;
+}
+.th {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(156, 156, 156);
+}
+.last {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    border-top: 1px solid rgb(138, 136, 136);
+    position: absolute;
+    top: 300px;
+}
+.one {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.one p {
+    margin-left: 50px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: rgb(105, 105, 105);
+}
+.ico {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ico .iconify {
+    color: rgb(105, 105, 105);
+    margin-top: 30px;
+    font-size: 25px;
+    margin-right: 50px;
+    
+}
+@media screen and (max-width: 376px) {
+    .header-1 {
+        display: none;
+    }
+    .header-2 {
+        display: none;
+    }
+    .baner {
+        display: none;
+    }
+    .email h1 {
+        display: none;
+    }
+    .photo-3 {
+        display: none;
+    }
+    .photo-2 {
+        display: none;
+    }
+    #contact-form {
+        display: none;
+    }
+    .icon {
+        display: none;
+    }
+    .left, .right {
+        width: 100%;
+    }
+    .journey {
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .journey-container {
+        width: 100%;
+        height: 1000px;
+        top: 0;
+        left: 0;
+    }
+    .last {
+        position: absolute;
+        top: 0;
+    }
+    .baner-tit {
+        display: none;
+    }
+    .top h1 {
+        font-size: 20px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .poloska {
+        display: none;
+    }
+    .button {
+        display: none;
+    }
+    .header-3 h1 {
+        font-size: 30px;
+    }
+    .first, .second, .third, .fourth {
+        display: none;
+    }
+    .footer-baner {
+        height: 0px;
+    }
+    .end {
+        height: 200px;
+    }
+    .end img {
+        display: none;
+    }
+    .left-2, .right-1 {
+        display: none;
+    }
+    .name {
+        display: block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        color: #000;
+    }
+
+
+
+}
+
+
+
+
